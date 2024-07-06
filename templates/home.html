@@ -1,0 +1,13 @@
+<!doctype html>
+<html>
+<head>
+  <title>Home</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<h1>Home</h1>
+<p>Welcome, {{ session['username'] }}!</p>
+<p><a href="{{ url_for('logout') }}">Logout</a></p>
+</body>
+</html>
+</html>
